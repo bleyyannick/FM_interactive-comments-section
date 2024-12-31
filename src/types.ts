@@ -7,22 +7,22 @@ type RequireAtLeastOne<T> = {
     png?: string;
     webp?: string;
   }
+
+  export interface DataType {
+    comments: CommentType[];
+    currentUser: User;
+  }
  
 export type User = {
     username: string;
     image?: RequireAtLeastOne<Image>;
   }
 
-export type Comment = {
+export type CommentType = {
     id: number;
     content: string; 
     user: User;
     createdAt: string; // it will change to Date type
-    replies: Comment[];
+    replies?: CommentType[];
     replyingTo?: User['username'];
-}
-
-export type Data = {
-    comments: Comment[];
-
 }
