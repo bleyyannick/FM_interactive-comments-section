@@ -13,11 +13,16 @@ export type User = {
     image?: RequireAtLeastOne<Image>;
   }
 
-export type Comments = {
+export type Comment = {
     id: number;
     content: string; 
     user: User;
     createdAt: string; // it will change to Date type
-    replies: Comments[];
+    replies: Comment[];
     replyingTo?: User['username'];
+}
+
+export type Data = {
+    comments: Comment[];
+
 }
