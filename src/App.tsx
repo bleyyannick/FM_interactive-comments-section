@@ -1,9 +1,9 @@
 
 import './App.css'
 import data from '../data.json'
-import { Comment } from './types'
-import iconDelete from '/images/icon-delete.svg'
-import iconEdit from '/images/icon-edit.svg'
+// import { Comment } from './types'
+// import iconDelete from '/images/icon-delete.svg'
+// import iconEdit from '/images/icon-edit.svg'
 import iconMinus from '/images/icon-minus.svg'
 import iconPlus from '/images/icon-plus.svg'
 import iconReply from '/images/icon-reply.svg'
