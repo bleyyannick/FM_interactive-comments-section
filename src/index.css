@@ -22,6 +22,7 @@ html, body {
   font-family: 'Rubik', sans-serif;
   font-size: var(--font-size-regular);
   background-color: var(--color-very-light-gray);
+  box-sizing: border-box;
 }
 /* Mobile first design */
 
@@ -117,4 +118,31 @@ button {
 .comment-replies {
   padding-left: 1rem; 
   border-left: 1px solid var( --color-light-gray);
+}
+
+.comment-add textarea {
+  height: 96px; 
+  width: 100%;
+  padding: 1rem; 
+  border-radius: 8px;
+  border: 1px solid var(--color-light-gray);
+  box-sizing: border-box;
+}
+
+.comment-add div {
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+.comment-add img {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+.comment-add button {
+  background-color: var(--color-moderate-blue);
+  color: white;
+  padding: .5rem 1rem;
+  border-radius: 8px;
 }

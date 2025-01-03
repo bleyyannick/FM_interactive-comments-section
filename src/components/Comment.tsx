@@ -3,7 +3,7 @@ import iconMinus from '/images/icon-minus.svg'
 import iconPlus from '/images/icon-plus.svg'
 import iconReply from '/images/icon-reply.svg'
 
-export default function Comment({ comment }: { comment: CommentType }) {
+export default function Comment({ comment }: {comment: CommentType }) {
     const replies = comment.replies?.map((reply: CommentType) => 
        <Comment key={reply.id} comment={reply} />
     );
